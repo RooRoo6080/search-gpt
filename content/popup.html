@@ -1,0 +1,89 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SearchGPT</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <h1>SearchGPT</h1>
+  <label class="switch">
+    <input type="checkbox" name="enabled" id="enabled">
+    <span class="slider round"></span>
+  </label>
+  <div id="key-options">
+    <hr>
+    <h2>OpenAI API Details</h2>
+    <p>OpenAI API Key</p>
+    <input type="password" name="api-key" id="api-key" style="margin-bottom: 10px;" required>
+    <button type="button" id="configure">Configure</button>
+  </div>
+  <hr>
+  <button type="button" id="advanced-panel">Advanced</button>
+  <button type="button" id="key-panel">API Key</button>
+  <div id="advanced-options" style="display: none;">
+    <h2>Advanced Options</h2>
+    <p>
+      model
+      <select name="model" id="model">
+        <option value="text-davinci-003">Davinci 3</option>
+        <option value="text-davinci-002">Davinci 2</option>
+        <option value="text-davinci-001">Davinci</option>
+        <option value="text-curie-001">Curie</option>
+        <option value="text-babbage-001">Babbage</option>
+        <option value="text-ada-001">Ada</option>
+      </select>
+    </p>
+    <p>
+      max-tokens
+      <input type="number" name="max-tokens" id="max-tokens" max="2048" min="1" step="1" value="50">
+    </p>
+    <p>
+      temperature
+      &ensp;
+      <b><sup>0</sup></b>
+      <input type="range" name="temperature" id="temperature" max="1" min="0" step="0.1" value="1" list="tickmarks">
+      <b><sup>1</sup></b>
+      <datalist id="tickmarks">
+        <option value="0"></option>
+        <option value="0.1"></option>
+        <option value="0.2"></option>
+        <option value="0.3"></option>
+        <option value="0.4"></option>
+        <option value="0.5"></option>
+        <option value="0.6"></option>
+        <option value="0.7"></option>
+        <option value="0.8"></option>
+        <option value="0.9"></option>
+        <option value="1.0"></option>
+      </datalist>
+    </p>
+    <p>
+      top_p
+      &ensp;
+      <b><sup>0</sup></b>
+      <input type="range" name="top-p" id="top-p" max="1" min="0" step="0.1" value="1" list="tickmarks">
+      <b><sup>1</sup></b>
+      <datalist id="tickmarks">
+        <option value="0"></option>
+        <option value="0.1"></option>
+        <option value="0.2"></option>
+        <option value="0.3"></option>
+        <option value="0.4"></option>
+        <option value="0.5"></option>
+        <option value="0.6"></option>
+        <option value="0.7"></option>
+        <option value="0.8"></option>
+        <option value="0.9"></option>
+        <option value="1.0"></option>
+      </datalist>
+    </p>
+    <button type="button" id="save-button">Save</button>
+    <button type="button" id="reset-button">Reset</button>
+  </div>
+  <script type="text/javascript" src="popup.js"></script>
+</body>
+
+</html>
