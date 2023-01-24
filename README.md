@@ -4,6 +4,7 @@ Get summarized results in seconds by using the power of OpenAI's GPT-3 models to
 
 ![icon-128](https://user-images.githubusercontent.com/67977174/211217221-9e7719f4-f80a-49d9-a2d3-6e07d6a562f8.png)
 
+### [Chrome Webstore Download](https://chrome.google.com/webstore/detail/searchgpt/nemhpjoggiokeajmkekkdkapjehpfaff?hl=en&authuser=0)
 
 ## Setup
 1. Make an OpenAI Account and get your API key at https://beta.openai.com/account/api-keys
