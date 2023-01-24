@@ -7,7 +7,8 @@ Get summarized results in seconds by using the power of OpenAI's GPT-3 models to
 
 ## Setup
 1. Make an OpenAI Account and get your API key at https://beta.openai.com/account/api-keys
-2. Copy and paste the key into popup of the SearchGPT extension
+2. Open the popup by clicking on the SearchGPT icon in your toolbar
+3. Copy and paste the key into popup of the SearchGPT extension
 
 
 ![image](https://user-images.githubusercontent.com/67977174/211216631-80bf45fc-8ca0-4bdf-8ad0-6860b6cd163f.png)
